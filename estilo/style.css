@@ -1,0 +1,150 @@
+@charset "UTF8";
+
+:root  {
+    --primary: #BF9775;
+    --secondary: #8C5D42;
+    --text-color: #D9CAC1;
+    --text-secondary: #403128;
+    --text-tertinary: #592519;
+}
+
+* {
+    font-family:'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* lado direto do header*/
+
+#event-description {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagens/interior-plano-vazio-com-elementos-de-decoracao.jpg);
+
+
+    /*background: linear-gradient(rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.8));
+    background-image: url(../imagens/interior-plano-vazio-com-elementos-de-decoracao.jpg);*/
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#displaimer h2, 
+#displaimer .date {
+    color: var(--primary);
+}
+
+#displaimer h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.event {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bolder;
+    margin-bottom: 1em;
+}
+p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+.date {
+    font-weight: bold
+}
+
+body {
+    padding-bottom: 500px;
+}
+
+/* lado esquerdo do header*/
+
+#form {
+    background-color: var(--secondary);
+    padding: 2.5em;
+    max-width: 22%;
+}
+
+#form > p {
+    font-size: 1.5em;
+    color: var(--text-color);
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group > label {
+    color: var(--text-color);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.form-group > input, .form-group > select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--text-tertinary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/* benefits section*/
+
+#key > h2 {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #592519;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+#benefit-1 {
+    background-image: url(../imagens/sala.jpg);
+}
+
+#benefit-2 {
+    background-image: url(../imagens/salaestante.jpg);
+}
+
+#benefit-3 {
+    background-image: url(../imagens/room.jpg);
+}
