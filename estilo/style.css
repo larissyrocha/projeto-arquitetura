@@ -59,7 +59,7 @@ p {
 }
 
 body {
-    padding-bottom: 500px;
+    padding-bottom: 10px;
 }
 
 /* lado esquerdo do header*/
@@ -212,7 +212,7 @@ body {
     width: 50%;
 }
 
-.detail > h3 {
+.detail > .detail-description > h3 {
     margin-bottom: 1em;
     font-size: 2em;
     font-weight: 500;
